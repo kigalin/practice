@@ -1,0 +1,213 @@
+/*第一屏动画*/
+.screen-1__heading-h2{
+	transition: all 1s;
+}
+.screen-1__heading-span{
+	transition: all 1s .5s;
+}
+.screen-1__heading-h2_animate_init,
+.screen-1__heading-span_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-1__heading-h2_animate_done,
+.screen-1__heading-span_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*第二屏动画*/
+.screen-2__heading-h2{
+	transition: all 1s;
+}
+.screen-2__heading-span,
+.screen-2__heading-hr,
+.screen-2__image-2{
+	transition: all 1s .5s;
+}
+.screen-2__image-3{
+	transition: all 1s 1.5s;
+}
+.screen-2__heading-h2_animate_init,
+.screen-2__heading-span_animate_init,
+.screen-2__heading-hr_animate_init,
+.screen-2__image-2_animate_init,
+.screen-2__image-3_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-2__heading-h2_animate_done,
+.screen-2__heading-span_animate_done,
+.screen-2__heading-hr_animate_done,
+.screen-2__image-2_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.screen-2__image-3_animate_done{
+	-webkit-animation:jump 1.5s 1.5s;
+}
+/*跳动动画*/
+@-webkit-keyframes jump{
+	0%{
+		transform: translate(0,100%);
+	}
+	60%{
+		transform: translate(0,0);
+	}
+	70%{
+		transform: translate(0,30%);
+	}
+	80%{
+		transform: translate(0,0);
+	}
+	90%{
+		transform: translate(0,15%);
+	}
+	100%{
+		transform: translate(0,0%);
+	}
+}
+
+/*第三屏动画*/
+.screen-3__heading-h2{
+	transition: all 1s;
+}
+.screen-3__image{
+	transition: all 0.5s;
+}
+.screen-3__heading-span,
+.screen-3__heading-hr{
+	transition: all 1s .5s;
+}
+.screen-3__icon-item-1,
+.screen-3__icon-item-2,
+.screen-3__icon-item-3,
+.screen-3__icon-item-4,
+.screen-3__icon-item-5{
+	transition: all 1s 1.5s;
+}
+.screen-3__heading-h2_animate_init,
+.screen-3__heading-span_animate_init,
+.screen-3__heading-hr_animate_init,
+.screen-3__icon-item-1_animate_init,
+.screen-3__icon-item-2_animate_init,
+.screen-3__icon-item-3_animate_init,
+.screen-3__icon-item-4_animate_init,
+.screen-3__icon-item-5_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-3__heading-h2_animate_done,
+.screen-3__heading-span_animate_done,
+.screen-3__heading-hr_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-3__image_animate_init{
+	opacity:0;
+	transform:scale(0);
+}
+.screen-3__image_animate_done{
+	opacity:1;
+	transform:scale(1);
+}
+.screen-3__icon-item-1_animate_done,
+.screen-3__icon-item-2_animate_done,
+.screen-3__icon-item-3_animate_done,
+.screen-3__icon-item-4_animate_done,
+.screen-3__icon-item-5_animate_done{
+	-webkit-animation:jump 1.5s 1.5s,breath 2s infinite 3s ;
+}
+/*呼吸灯动画*/
+@-webkit-keyframes breath{
+	0%{
+		box-shadow: 0 0 3px rgba(255,255,255,0.5);
+	}
+	25%{
+		box-shadow: 0 0 10px rgba(255,255,255,0.5);
+	}
+	50%{
+		box-shadow: 0 0 3px rgba(255,255,255,0.5);
+	}
+	75%{
+		box-shadow: 0 0 10px rgba(255,255,255,0.5);
+	}
+	100%{
+		box-shadow: 0 0 3px rgba(255,255,255,0.5);
+	}
+}
+/*第四屏动画*/
+.screen-4__heading-h2,
+.screen-4__feature-item-img-1,
+.screen-4__feature-item-img-2,
+.screen-4__feature-item-img-3,
+.screen-4__feature-item-img-4{
+	transition: all 1s;
+}
+.screen-4__heading-span,
+.screen-4__heading-hr{
+	transition: all 1s 1s;
+}
+
+.screen-4__heading-h2_animate_init,
+.screen-4__heading-span_animate_init,
+.screen-4__heading-hr_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-4__heading-h2_animate_done,
+.screen-4__heading-span_animate_done,
+.screen-4__heading-hr_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-4__feature-item-img-1_animate_init,
+.screen-4__feature-item-img-2_animate_init,
+.screen-4__feature-item-img-3_animate_init,
+.screen-4__feature-item-img-4_animate_init{
+	opacity: 0;
+	transform: scale(0);
+}
+.screen-4__feature-item-img-1_animate_done,
+.screen-4__feature-item-img-2_animate_done,
+.screen-4__feature-item-img-3_animate_done,
+.screen-4__feature-item-img-4_animate_done{
+	opacity: 1;
+	transform: scale(1);
+}
+/*第五屏动画*/
+.screen-5__heading-h2{
+	transition: all 1s;
+}
+.screen-5__img{
+	transition: all 0.5s;
+}
+.screen-5__heading-span,
+.screen-5__heading-hr{
+	transition: all 1s .5s;
+}
+.screen-5__heading-h2_animate_init,
+.screen-5__heading-span_animate_init,
+.screen-5__heading-hr_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-5__heading-h2_animate_done,
+.screen-5__heading-span_animate_done,
+.screen-5__heading-hr_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-5__img_animate_init{
+	opacity: 0;
+	transform: scale(0);
+}
+.screen-5__img_animate_done{
+	opacity: 1;
+	transform: scale(1);
+}
+/*侧边栏动画*/
+.toolbar_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
